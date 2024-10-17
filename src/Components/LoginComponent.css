@@ -1,0 +1,31 @@
+.heading {
+  padding: 20px;
+  text-align: center;
+  margin-block-end: 40px;
+}
+.list-items {
+  list-style: none;
+}
+.list {
+  display: flex;
+  gap: 10px;
+}
+ul li img {
+  width: 32px;
+  height: 17px;
+}
+.list-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-block-start: 7rem;
+   
+}
+.button{
+  background-color: #0d0d5d;
+  color: white;
+  border-radius: 5px;
+  height: 2.3rem;
+  border: none;
+}
+

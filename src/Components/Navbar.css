@@ -1,0 +1,39 @@
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.dove{
+    font-size: 40px;
+    color: #0d0d5d;
+}
+.logo-txt h1{
+    letter-spacing: 12px;
+    color: #0d0d5d;
+}
+.logo-txt p{
+    letter-spacing: 0.5rem;
+    color: #0d0d5d;
+    
+}
+@media (max-width: 576px) {
+    .logo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dove {
+      font-size: 1.8rem; /* Adjust icon size on smaller screens */
+    }
+  
+    .logo-txt h1 {
+      font-size: 1.3rem;
+    }
+  
+    .logo-txt p {
+      font-size: 0.75rem;
+      letter-spacing: 0.3rem;
+    }
+  }
