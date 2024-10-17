@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import fullStack from '../assets/full-stackimg.jpg';
 import './CourseDetailed.css'; 
 import CourseTabs from './CourseTabs.jsx';
@@ -11,6 +11,7 @@ const CourseDetailed = () => {
     <div className="course-detailed-container">
       <div className="course-content d-flex">
         <div className='course-img'>
+        <h4>{course.replace('-', ' ')}</h4>
         <img src={fullStack} alt="Course Illustration" className="courseImage" />
         </div>
         
@@ -26,7 +27,9 @@ const CourseDetailed = () => {
           <div className='d-flex justify-content-between'>
           
           <p><CiClock1 />Total Hours</p>
+          <Link to='/courses/:course/coursedetails'>
           <button className='course-detailedbtn'>Start Learning</button>
+          </Link>
           </div>
         </div>
       </div>
