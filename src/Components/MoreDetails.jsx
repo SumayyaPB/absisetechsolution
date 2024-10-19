@@ -2,7 +2,8 @@ import { useState } from "react";
 import { CiYoutube } from "react-icons/ci";
 import { CgFileDocument } from "react-icons/cg";
 import { HiOutlineDocumentDuplicate } from "react-icons/hi";
-import './MoreDelails.css'; // Corrected the import filename
+import "./MoreDelails.css"; // Corrected the import filename
+
 
 const MoreDetails = () => {
   const [visibleSection, setVisibleSection] = useState(null);
@@ -15,14 +16,12 @@ const MoreDetails = () => {
   return (
     <div className="more-details-container">
       <div className="section">
-        <h4 className="section-title" onClick={() => toggleVisibility('html')}>
+        <h4 className="section-title" onClick={() => toggleVisibility("html")}>
           Introduction to HTML
         </h4>
-        {visibleSection === 'html' && (
+        {visibleSection === "html" && (
           <div className="section-content">
-            <p className="content">
-              HTML Video Tutorial Content goes here.
-            </p>
+            <p className="content">HTML Video Tutorial Content goes here.</p>
             <div className="buttons">
               <button className="action-button">
                 <CiYoutube /> Video Tutorial
@@ -39,14 +38,12 @@ const MoreDetails = () => {
       </div>
 
       <div className="section">
-        <h4 className="section-title" onClick={() => toggleVisibility('css')}>
+        <h4 className="section-title" onClick={() => toggleVisibility("css")}>
           Introduction to CSS
         </h4>
-        {visibleSection === 'css' && (
+        {visibleSection === "css" && (
           <div className="section-content">
-            <p className="content">
-              CSS Video Tutorial Content goes here.
-            </p>
+            <p className="content">CSS Video Tutorial Content goes here.</p>
             <div className="buttons">
               <button className="action-button">
                 <CiYoutube /> Video Tutorial
@@ -63,10 +60,13 @@ const MoreDetails = () => {
       </div>
 
       <div className="section">
-        <h4 className="section-title" onClick={() => toggleVisibility('javascript')}>
+        <h4
+          className="section-title"
+          onClick={() => toggleVisibility("javascript")}
+        >
           Introduction to JavaScript
         </h4>
-        {visibleSection === 'javascript' && (
+        {visibleSection === "javascript" && (
           <div className="section-content">
             <p className="content">
               JavaScript Video Tutorial Content goes here.
@@ -87,14 +87,12 @@ const MoreDetails = () => {
       </div>
 
       <div className="section">
-        <h4 className="section-title" onClick={() => toggleVisibility('react')}>
+        <h4 className="section-title" onClick={() => toggleVisibility("react")}>
           Introduction to React
         </h4>
-        {visibleSection === 'react' && (
+        {visibleSection === "react" && (
           <div className="section-content">
-            <p className="content">
-              React Video Tutorial Content goes here.
-            </p>
+            <p className="content">React Video Tutorial Content goes here.</p>
             <div className="buttons">
               <button className="action-button">
                 <CiYoutube /> Video Tutorial
@@ -109,6 +107,7 @@ const MoreDetails = () => {
           </div>
         )}
       </div>
+      
     </div>
   );
 };

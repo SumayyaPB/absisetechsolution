@@ -1,5 +1,6 @@
 import './HomePage.css'
 import Coursecard from "../Components/Coursecard";
+import Footer from '../Components/Footer';
 
 const HomePage = () => {
   return (
@@ -9,6 +10,8 @@ const HomePage = () => {
         <Coursecard heading="Front End Development" />
         <Coursecard heading="Back End Development" />
       </div>
+      <hr />
+      <Footer/>
     </div>
   );
 };

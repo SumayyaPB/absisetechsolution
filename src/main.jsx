@@ -8,7 +8,7 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "./Pages/HomePage.jsx";
 import CourseDetailed from "./Components/CourseDetailed.jsx";
-import MoreDetails from "./Components/MoreDetails.jsx";
+import FinalPage from "./Pages/FinalPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/courses/:course/coursedetails",
-        element: <MoreDetails/>,
+        element: <FinalPage/>,
       }
       
     ] 

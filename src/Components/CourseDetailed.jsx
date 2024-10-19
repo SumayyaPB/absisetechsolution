@@ -3,6 +3,7 @@ import fullStack from '../assets/full-stackimg.jpg';
 import './CourseDetailed.css'; 
 import CourseTabs from './CourseTabs.jsx';
 import { CiClock1 } from "react-icons/ci";
+import Footer from './Footer.jsx';
 
 const CourseDetailed = () => {
   const { course } = useParams();
@@ -33,7 +34,13 @@ const CourseDetailed = () => {
           </div>
         </div>
       </div>
+      <div>
       <CourseTabs className='tabs'/>
+      </div>
+      <div>
+        <hr />
+      <Footer/>
+      </div>
     </div>
   );
 };

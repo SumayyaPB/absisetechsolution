@@ -3,6 +3,7 @@ import { PiBatteryMediumFill } from "react-icons/pi";
 import { BiBook } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 
+
 // eslint-disable-next-line react/prop-types
 const Coursecard = ({ heading }) => {  
   return (
@@ -22,6 +23,7 @@ const Coursecard = ({ heading }) => {
           <button>Start Learning {heading || 'Course'}</button>
         </Link>
       </div>
+      
     </div>
   );
 };

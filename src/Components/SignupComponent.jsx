@@ -1,9 +1,10 @@
 // import React from 'react';
 import "./LoginComponent.css";
 import signupImg from '../assets/signup-img.png'
-import { FaRegCopyright } from "react-icons/fa6";
+// import { FaRegCopyright } from "react-icons/fa6";
 import {Link} from 'react-router-dom';
 import { FaRegUserCircle } from "react-icons/fa";
+import Footer from "./Footer";
 
 const SignComponent = () => {
   return (
@@ -36,7 +37,7 @@ const SignComponent = () => {
           </Link>
           
         </div>
-        <div className="list-div">
+        {/* <div className="list-div">
           <ul className="list d-flex justify-content-around">
             <li className="list-items">Privacy</li>
             <li className="list-items">Terms</li>
@@ -48,6 +49,9 @@ const SignComponent = () => {
               reserved.
             </a>
           </div>
+        </div> */}
+        <div>
+          <Footer />
         </div>
       </div>
     </div>

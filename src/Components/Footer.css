@@ -1,0 +1,37 @@
+.footer {
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-items {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.list-items a {
+    color: black;
+    font-weight: 500;
+}
+
+.footer-text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-text {
+        margin-top: 0;
+        text-align: right;
+    }
+
+    .list-items {
+        margin: 0 15px;
+    }
+}
